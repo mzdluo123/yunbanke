@@ -1,0 +1,7 @@
+URL_LOGIN = "https://api.mosoteach.cn/mssvc/index.php/passport/login"
+URL_CC_LIST_JOINED = "https://api.mosoteach.cn/mssvc/index.php/cc/list_joined"
+URL_CHECKIN_INDEX = "https://api.mosoteach.cn/mssvc/index.php/checkin/index"
+URL_INTERACTION_LIST = "https://api.mosoteach.cn/mssvc/index.php/interaction/mylist_v2"
+URL_CHECKIN_OPEN = "https://api.mosoteach.cn/mssvc/index.php/checkin/current_open"
+URL_MEMBER_LIST = "https://api.mosoteach.cn/mssvc/index.php/member/list_member"
+URL_CHECKIN = "https://checkin.mosoteach.cn:19528/checkin"
