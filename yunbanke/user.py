@@ -21,6 +21,16 @@ class User:
         self._access_id = ""
         self._last_sec_update_ts_s = ""
 
+    def dump_token(self) -> dict:
+        return {"access_secret": self._access_secret, "user_id": self._user_id, "access_id": self._access_id,
+                "last_sec_update_ts_s": self._last_sec_update_ts_s}
+
+    def restore_token(self, data: dict):
+        self._access_secret = data["access_secret"]
+        self._access_id = data["access_id"]
+        self._user_id = data["user_id"]
+        self._last_sec_update_ts_s = data["last_sec_update_ts_s"]
+
     def login_user(self, user: str, pwd: str) -> Tuple[dict, bool, str]:
         """
         登录用户
